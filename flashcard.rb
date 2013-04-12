@@ -1,8 +1,8 @@
 class Flashcard
 attr_accessor :question, :answer
 
-  def initilize(card)
-    @question = card[0]
-    @answer = card[1]
+  def initilize(question, answer)
+    @question = question
+    @answer = answer
   end
 end
