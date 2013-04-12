@@ -34,6 +34,7 @@ class Interface
   end
 end
 
+
 ###################################
 # Drive Code
 # class FlashCard
@@ -46,9 +47,8 @@ end
 
 
 
-# interface = Interface.new
-# interface.factory
-# p interface.display
+interface = Interface.new('flashcard_sample.txt')
+p interface.display
 
 
 

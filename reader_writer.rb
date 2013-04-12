@@ -1,11 +1,11 @@
 require_relative 'flashcard'
 
 class ReaderWriter
-  def self.read
+  def self.read(file)
     lines = []
     flashcards = []
     qa = []
-    File.foreach('flashcard_sample.txt') do |line| 
+    File.foreach(file) do |line| 
       lines << line if (line != "\n")
     end
 
