@@ -1,4 +1,8 @@
 ruby_flashcards
 ===============
 
-This is the initial commit
+Vincent Storme
+Sida Zhang
+Ken Rettberg
+Adam Sartell
+Sam Miyakawa
