@@ -1,4 +1,5 @@
 class ReaderWriter
+<<<<<<< HEAD
   def self.read
     lines = []
     flashcards = []
@@ -19,3 +20,18 @@ class ReaderWriter
 end
 
 puts ReaderWriter.read.inspect
+=======
+  def initialize(input)
+    @filename = input
+    parse_data(@filename)
+  end
+
+  def parse_data(file)
+    FILE.open(file) do |item|
+
+
+end
+
+
+#What?!
+>>>>>>> master
