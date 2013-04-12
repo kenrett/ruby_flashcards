@@ -1,4 +1,3 @@
-i am a file
-no, I am a file
+class Flashcard
 
-#Hey, can you read this? I am changing the file? - Adam
+end
