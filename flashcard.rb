@@ -1,8 +1,9 @@
-class Flashcard
-attr_accessor :question, :answer
 
-  def initilize(card)
-    @question = card[0]
-    @answer = card[1]
+
+class Flashcard
+  attr_accessor :question, :answer
+
+  def initialize(card)
+    @question, @answer = card
   end
 end
