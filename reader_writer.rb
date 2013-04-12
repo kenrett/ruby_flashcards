@@ -15,5 +15,3 @@ class ReaderWriter
     flashcards 
   end
 end
-
-puts ReaderWriter.read.inspect
