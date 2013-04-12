@@ -6,7 +6,6 @@ class Interface
   attr_reader :all_flashcards, :shuffle
   def initialize(filename)
     @all_flashcards = load(filename)
-    # factory
   end
 
   def load(filename)
@@ -34,12 +33,6 @@ class Interface
   def shuffle
     @all_flashcards.shuffle!
   end
-
-  # def factory
-  #   1.upto(10) do |index|
-  #     @all_flashcards << FlashCard.new(index)
-  #   end
-  # end
 end
 
 ###################################
