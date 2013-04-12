@@ -1,3 +1,7 @@
+require_relative 'flashcard'
+require_relative 'reader_writer'
+
+
 class Interface
 
   def initialize(filename)
@@ -6,11 +10,11 @@ class Interface
   end
 
   def load(filename)
-    ReaderWriter.load # <=== check to see what they're calling it...
-      end
+    ReaderWriter.read(filename) # returns an array of objects (the actual flashcards)
+  end
 
   def guess
-
+    
   end
 
   def validate
@@ -18,7 +22,7 @@ class Interface
   end
 
   def shuffle
-
+    
   end
 
 end
