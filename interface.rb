@@ -14,7 +14,50 @@ class Interface
 
   def display
     @all_flashcards.each do |flashcard| 
-      puts flashcard.question
+  string = <<-EOD      
+
+ _                               
+|_) o  |  |  _       _|_ _  |  | 
+|   |  |  | (_)\\\^/    |_(_| |  |<
+
+
+             "#{flashcard.question}"
+                                    /
+                      __.--'|      /
+              ___.---'      |     /
+      ___.---'              |    /
+ _.--'   %%%        ///     |   /  
+ |      %%%%%       .. |    | _/  
+ |     %%c ''       U. '    |
+ J      %! .U       __=__   |
+  L     __=__      |     \\  |
+  L    /     \\     |.    \\\\-`-.
+  |   //__)__)._.--||\\    \\\\__.>-._
+  | _.\\\\     ||    \\\\___.--'       `--._
+  J-._ \\\\_____.----'                    `--.__
+  J   `-<_                                    `-.__
+   L      `-.                                     _>-.
+   +.        `-._                          ___.--'   |
+   | `-._        `-._                __.--'          |
+         `-._        `-.       __.--'            _.--'
+             `-._       `-._.-'             _.--'    |
+                 `-.       |           _.--'
+                    `-.    |      _.--'
+                       `-. | _.--'
+                          `|'
+                           |
+
+EOD
+puts string
+
+
+
+    
+
+
+
+
+      
       right_answer(flashcard)
     end 
   end
@@ -22,6 +65,7 @@ class Interface
   def right_answer(flashcard)
     foobar = true
     while foobar
+      print ">> "
       answer = gets.chomp
       if answer == flashcard.answer
         puts "Correct!"
