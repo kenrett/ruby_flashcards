@@ -5,7 +5,7 @@ class ReaderWriter
   end
 
   def parse_data(file)
-    CSV.foreach(file) do |item|
+    FILE.open(file) do |item|
 
 
 end
