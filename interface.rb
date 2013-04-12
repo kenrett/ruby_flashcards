@@ -5,6 +5,7 @@ class Interface
   attr_reader :all_flashcards, :shuffle
   def initialize(filename)
     @all_flashcards = load(filename)
+    self.shuffle
   end
 
   def load(filename)
@@ -33,19 +34,6 @@ class Interface
     @all_flashcards.shuffle!
   end
 end
-
-
-###################################
-# Drive Code
-# class FlashCard
-#   attr_reader :question, :answer
-#   def initialize(arg)
-#     @question = "here is a question: #{arg}"
-#     @answer = "#{arg}"
-#   end
-# end
-
-
 
 interface = Interface.new('flashcard_sample.txt')
 p interface.display
