@@ -6,7 +6,7 @@ class ReaderWriter
     flashcards = []
     qa = []
     File.foreach(file) do |line| 
-      lines << line if (line != "\n")
+      lines << line.chomp if (line != "\n")
     end
 
     lines.each_index { |i| qa << [lines[i], lines[i+1]] if i.even? }
