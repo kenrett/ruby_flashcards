@@ -16,16 +16,17 @@ class Interface
     @all_flashcards.each do |flashcard| 
       puts flashcard.question
       answer = gets.chomp
+      p "Answer = #{flashcard.answer}"
       validate(flashcard, answer.downcase)
     end 
   end
 
   def validate(flashcard, answer)
-    if answer == flashcard.answer
+    if answer == flashcard.answer 
       puts "Correct!"
       return true
     else
-      puts "Nope, you're stupid!"
+      puts "Nope, you're stupid! (Or Sam and Adam screwed up!)"
       return false
     end
   end
