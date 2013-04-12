@@ -5,3 +5,4 @@ class Flashcard
     @question, @answer = card
   end
 end
+
