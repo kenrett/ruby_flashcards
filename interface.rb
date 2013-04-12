@@ -15,19 +15,20 @@ class Interface
   def display
     @all_flashcards.each do |flashcard| 
       puts flashcard.question
-      answer = gets.chomp
-      p "Answer = #{flashcard.answer}"
-      validate(flashcard, answer.downcase)
+      right_answer(flashcard)
     end 
   end
 
-  def validate(flashcard, answer)
-    if answer == flashcard.answer 
-      puts "Correct!"
-      return true
-    else
-      puts "Nope, you're stupid! (Or Sam and Adam screwed up!)"
-      return false
+  def right_answer(flashcard)
+    foobar = true
+    while foobar
+      answer = gets.chomp
+      if answer == flashcard.answer
+        puts "Correct!"
+        foobar = false
+      else
+        puts "You're stupid. Try again!"
+      end
     end
   end
 
@@ -37,7 +38,7 @@ class Interface
 end
 
 interface = Interface.new('flashcard_sample.txt')
-p interface.display
+interface.display
 
 
 
