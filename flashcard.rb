@@ -1,5 +1,3 @@
-
-
 class Flashcard
   attr_accessor :question, :answer
 
